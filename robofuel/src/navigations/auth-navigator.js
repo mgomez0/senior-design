@@ -1,5 +1,7 @@
 import {createStackNavigator} from 'react-navigation-stack';
 
+import HomeScreen from '_views/home';
+import AboutScreen from '_views/about';
 import LoginScreen from '_views/login';
 
 const AuthNavigatorConfig = {
@@ -9,7 +11,15 @@ const AuthNavigatorConfig = {
 };
 
 const RouteConfigs = {
-  Login:LoginScreen,
+  Login:{
+    screen:LoginScreen
+  },
+  Home:{
+    screen:HomeScreen
+  },
+  About:{
+    screen:AboutScreen
+  }
 };
 
 const AuthNavigator = createStackNavigator(RouteConfigs, AuthNavigatorConfig);

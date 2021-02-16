@@ -6,7 +6,7 @@ import AppNavigator from './app-navigator';
 const RootNavigator = createSwitchNavigator(
   {
     Auth: AuthNavigator,
-    App: AppNavigator,
+    // App: AppNavigator,
   },
   {
     initialRouteName: 'Auth',
