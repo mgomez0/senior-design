@@ -4,22 +4,22 @@ import { color } from 'react-native-reanimated';
 
 
 
-function LoginScreen({ navigation }) {
+function CreationScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      
+      <Text style={styles.title}>Create an Account</Text>
       <View>
-          <Text style={styles.title}>Login</Text>
           <Text style={styles.inputheader}>Enter Email Address</Text>
           <TextInput style={styles.inputbubble}></TextInput>
           <Text style={styles.inputheader}>Enter Password</Text>
           <TextInput style={styles.inputbubble}></TextInput>
-          
+          <Text style={styles.inputheader}>Re-enter Password</Text>
+          <TextInput style={styles.inputbubble}></TextInput>
       </View>
       
       <View> 
          <TouchableOpacity style={styles.Button} >
-             <Text style={styles.Buttontext}>Login</Text>
+             <Text style={styles.Buttontext}>Register</Text>
              </TouchableOpacity> 
       </View>
       
@@ -45,12 +45,11 @@ const styles = StyleSheet.create({
         fontSize:18,
         color: '#E5E5E5',
         paddingVertical: 15,
-        paddingHorizontal: 37,  
+        paddingHorizontal: 26,  
     },
     title: {
         fontSize:50,
-        marginLeft: 30,
-        marginBottom:20,
+        paddingHorizontal: 30,
         
     },
     inputbubble: {
@@ -61,6 +60,7 @@ const styles = StyleSheet.create({
         margin:10,
         paddingHorizontal: 30,
     },
+   
     inputheader: {
         fontSize:15,
         marginLeft: 30,
@@ -70,4 +70,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default LoginScreen;
+export default CreationScreen;

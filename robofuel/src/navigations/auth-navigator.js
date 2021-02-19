@@ -3,6 +3,7 @@ import {createStackNavigator} from 'react-navigation-stack';
 import HomeScreen from '_views/home';
 import AboutScreen from '_views/about';
 import LoginScreen from '_views/login';
+import CreationScreen from '_views/creation';
 
 const AuthNavigatorConfig = {
   initialRouteName: 'Login',
@@ -19,6 +20,9 @@ const RouteConfigs = {
   },
   About:{
     screen:AboutScreen
+  },
+  Creation:{
+    screen:CreationScreen
   }
 };
 
