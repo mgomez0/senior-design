@@ -6,7 +6,7 @@ import LoginScreen from '_views/login';
 import CreationScreen from '_views/creation';
 
 const AuthNavigatorConfig = {
-  initialRouteName: 'Home',
+  initialRouteName: 'About',
   header: null,
   headerMode: 'none',
 };
