@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Button, StyleSheet, TouchableOpacity, Text } from "react-native";
+import { StyleSheet, TouchableOpacity, Text } from "react-native";
+// import { Common } from '_styles';
 
 TouchableOpacity.defaultProps = { activeOpacity: 0.8 };
 
@@ -9,22 +10,39 @@ const AppButton = ({ onPress, title }) => (
   </TouchableOpacity>
 );
 
-  const styles = StyleSheet.create({
-    // ...
-    appButtonContainer: {
-      elevation: 8,
-      backgroundColor: "black",
-      borderRadius: 10,
-      paddingVertical: 10,
-      paddingHorizontal: 12
+
+
+const styles = StyleSheet.create({
+    
+  appButtonContainer: {
+      
+      backgroundColor: '#000000',
+      borderWidth: 2,
+      // boxSizing: 'border-box',
+      borderRadius: 6,
+      justifyContent: 'center'
+      
     },
     appButtonText: {
-      fontSize: 18,
-      color: "#fff",
-      fontWeight: "bold",
-      alignSelf: "center",
-      textTransform: "uppercase"
+      // position: 'absolute',
+      // width: 40,
+      // height: 15,
+      // left: calc(50% - 40/2 - 1.21),
+      // top: calc(50% - 15/2 + 0.5),
+      fontFamily: 'Roboto',
+      fontStyle: 'normal',
+      fontWeight: '900',
+      fontSize: 13,
+      lineHeight: 15,
+      display: 'flex',
+      // alignItems: 'center',
+      textAlign: 'center',
+      letterSpacing: 0.04,
+      textTransform: 'uppercase',
+      color: '#FFFFFF'
     }
+
+
   });
 
   export default AppButton;
