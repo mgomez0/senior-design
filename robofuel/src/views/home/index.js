@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, SafeAreaView, Text, TouchableHighlight, StyleSheet, TouchableOpacity, TextInput} from 'react-native';
+import {View, SafeAreaView, Text, TouchableHighlight, StyleSheet, TouchableOpacity, TextInput, Image} from 'react-native';
 import { color } from 'react-native-reanimated';
 
  var logo = require('./images/fuely_logo.png')
@@ -8,7 +8,8 @@ function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <View>
-      <img src= {logo}/>
+      <Image source={logo}
+      />
 
       </View>
 
