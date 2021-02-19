@@ -19,9 +19,9 @@ function LoginScreen({ navigation }) {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'flex-end' }}>
         <Text>Login Screen</Text>
-        <TouchableOpacity onPress={onPress} style={styles.appButtonContainer}>
+        {/* <TouchableOpacity onPress={onPress} style={styles.appButtonContainer}>
           <Text style={styles.appButtonText}>{title}</Text>
-        </TouchableOpacity>
+    </TouchableOpacity>/*}
         {/* <AppButton
           title="Login"
           onPress={() => navigation.navigate('Home')}
