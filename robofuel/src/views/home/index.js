@@ -2,13 +2,18 @@ import React from 'react';
 import {View, SafeAreaView, Text, TouchableHighlight, StyleSheet, TouchableOpacity, TextInput} from 'react-native';
 import { color } from 'react-native-reanimated';
 
-
+ var logo = require('./images/fuely_logo.png')
 
 function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      
       <View>
+      <img src= {logo}/>
+
+      </View>
+
+      <View>
+
           <Text style={styles.title}>RoboFuel</Text>
         
       </View>
@@ -83,6 +88,10 @@ const styles = StyleSheet.create({
         paddingHorizontal: 50,
 
     },
+    logo: {
+      height: 80,
+      width:50,
+    }
 });
 
 export default HomeScreen;
