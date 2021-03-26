@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
       // height: 15,
       // left: calc(50% - 40/2 - 1.21),
       // top: calc(50% - 15/2 + 0.5),
-      fontFamily: 'Roboto',
+      fontFamily: 'Roboto-Regular',
       fontStyle: 'normal',
       fontWeight: '900',
       fontSize: 13,
