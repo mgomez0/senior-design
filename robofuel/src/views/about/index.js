@@ -2,7 +2,7 @@ import React from 'react';
 import {View, SafeAreaView, Text, TouchableHighlight, StyleSheet, TouchableOpacity, TextInput, Image} from 'react-native';
 import { color } from 'react-native-reanimated';
 
- var icon = require('./images/profile icon.png')
+ var icon = require('./images/profile_icon.png')
 
 function AboutScreen({ navigation }) {
   return (
@@ -92,8 +92,9 @@ const styles = StyleSheet.create({
 
     },
     icon: {
-      height: 80,
-      width:50,
+      height:176 ,
+      width: 184,
+      marginLeft: 110, 
       
     },
 

@@ -4,9 +4,10 @@ import HomeScreen from '_views/home';
 import AboutScreen from '_views/about';
 import LoginScreen from '_views/login';
 import CreationScreen from '_views/creation';
+import PaymentScreen from '_views/payment';
 
 const AuthNavigatorConfig = {
-  initialRouteName: 'About',
+  initialRouteName: 'Payment',
   header: null,
   headerMode: 'none',
 };
@@ -23,6 +24,9 @@ const RouteConfigs = {
   },
   Creation:{
     screen:CreationScreen
+  },
+  Payment:{
+    screen:PaymentScreen
   }
 };
 
